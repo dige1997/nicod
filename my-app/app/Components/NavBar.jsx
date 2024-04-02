@@ -23,11 +23,11 @@ export default function NavBar() {
     }, []);
 
     return (
-        <nav className={`fixed top-0 w-full p-4 transition-all duration-300 ${isScrolled ? 'bg-gray-50 shadow-md' : 'bg-transparent'}`}>
+        <nav className={`fixed z-50 top-0 w-full p-4 transition-all duration-500 ${isScrolled ? 'bg-gray-500 shadow-md' : 'bg-transparent text-transparent'}`}>
             <div className="mx-auto flex justify-center items-center">
                 <ul className="flex space-x-32">
                     <li>
-                        <a href="#" className="">Home</a>
+                        <a href="#" className="font-semibold ">Home</a>
                     </li>
                     <li>
                         <a href="#" className="">About</a>
@@ -38,5 +38,7 @@ export default function NavBar() {
                 </ul>
             </div>
         </nav>
+        
+
     );
 }
